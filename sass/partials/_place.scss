@@ -1,0 +1,61 @@
+.placed-order {
+  max-width: 1124px;
+  margin: 0px auto;
+  margin-top: 100px;
+  padding: 10px;
+  background: url(/images/background-purple.jpg);
+  background-position: left;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+ 
+}
+
+.place-order__inner {
+  margin-top: 100px;
+  padding-top: 20px;
+  padding-bottom: 80px;
+}
+
+.place-order__item {
+  margin-top: 120px;
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 30px;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+
+.place-order__item a {
+  padding: 20px;
+  margin: 30px auto;
+}
+
+.place-order__item p {
+  margin: 20px auto;
+  text-align: center;
+}
+
+.place-order__logo {
+  max-width: 60%;
+  margin: auto;
+}
+
+.place-order__item h3 {
+  color: $colour-blue-dark-md;
+}
+.place-order__item h4 {
+  padding-top: 20px;
+  margin-bottom: -10px;
+}
+
+.place-order__item span {
+  margin: 20px auto;
+}
+.place-order__item i {
+  font-size: 20px;
+}
+

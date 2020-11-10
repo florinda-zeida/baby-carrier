@@ -1,0 +1,272 @@
+/*___________HEADINGS_____________*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+b,
+a {
+    font-family: $font-family-poppins;
+    color: $colour-text;
+    margin: 0;
+    
+}
+/*-----headings-first----*/
+h1 {
+    font-size: 20px; 
+    font-weight: 500;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    word-spacing: 0.5px;
+}
+
+h3 {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+h4 {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+h5 {
+    font-size: 15px; 
+    font-weight: 400;   
+}
+
+h6 {
+    font-family: $font-family-caveat;
+    font-size: 30px; 
+    font-weight: 300;
+}
+/*-----headings-footer----*/
+.h3{
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 0.6px;
+ 
+}
+.h5{
+    font-family: $font-family-lato;
+    font-size: 16px;
+    font-weight: 300;
+}
+.a{
+    font-family: $font-family-lato;
+    font-size: 16px;
+    font-weight: 300;
+}
+/*---------------------------------*/
+/*-----headings-card----*/
+.h4, .b{
+    font-size: 18px;
+    font-weight: 400;
+}
+.b{
+    font-weight: 600;
+}
+.span{
+    text-decoration: line-through;
+    color: red;
+    font-size: 14px;
+    padding-right: 10px;
+}
+
+/*---------------------------------*/
+
+p {
+    font-family: $font-family-questrial;
+    font-size: 15px;
+    margin: 0;
+    color: $colour-text;
+    font-weight: 400;
+    line-height: 1.25em;
+    text-align: justify;
+    letter-spacing: 0.2px;
+}
+
+a {
+    font-size: 16px;
+    font-weight: 400; 
+    color: $colour-link;
+    cursor: pointer;
+    &:hover {
+    color: $colour-link-hover;
+}
+}
+
+b {
+    font-size: 16px;
+    font-weight: 600;
+    color: $colour-text;
+}
+
+span {
+    font-family: $font-family-lato;
+    font-size: 12px;
+    margin: 0;
+    font-weight: 300;
+    color: $colour-text;
+}
+
+q {
+ 
+    font-family: $font-family-lato;
+    font-size: 16px;
+    margin: 0 ;
+    padding: 0px;
+    color:$colour-text;
+    font-weight: 400;
+    line-height: 1.25em;
+    text-align: justify;
+}
+#tabs-btn {
+    font-size: 14px;
+}
+label{
+    font-size: 15px;
+    font-family: $font-family-poppins;
+}
+
+
+
+
+@media only screen and (min-width: $breakpoint-second) {
+  /*----headings---*/
+  h1 {
+      font-size: 27px;
+  }
+  h2 {
+      font-size: 22px;
+  }
+  h3 {
+      font-size: 20px;
+      
+  }
+  h4 {
+      font-size: 17px;
+  }
+  h5 {
+      font-size: 16px;
+  }
+  a {
+      font-size: 16px;
+  }
+  p {
+      font-size: 16px;
+      
+  }
+  q {
+      font-size: 18px;
+  }
+  b {
+      font-size: 19px;
+      font-weight: 500;
+  }
+  span {
+      
+      font-size: 14px;
+  }
+  
+  button {
+      font-size: 18px;
+  }
+  #tabs-btn {
+    font-size: 15px;
+}
+  
+}
+
+@media only screen and ( min-width: $breakpoint-fourth) {
+  /*--------headings------*/
+  h1 {
+      font-size: 38px;
+      font-weight: 500;
+  }
+  h2 {
+      font-size: 24px;
+  }
+  h3 {
+      font-size: 22px;
+      
+  }
+  
+  h5 {
+      font-size: 17px;
+  }
+  h6 {
+      font-size: 36px;
+  }
+  .h3 {
+    font-size: 18px;
+}
+.h5 {
+    font-size: 17px;
+}
+.a {
+    font-size: 17px;
+}
+  
+  a {
+      font-size: 17px;
+  }
+  b {
+      font-size: 18px;
+  }
+  span {
+      font-size: 14px;
+  }
+  button {
+      font-size: 18px;
+  }
+  
+  .top-links-icons i {
+      font-size: 24px;
+  }
+}
+@media only screen and (min-width: $breakpoint-fifth) {
+  /*--------headings------*/
+  h1 {
+      font-size: 46px;
+  }
+  h2 {
+      font-size: 28px;
+  }
+  
+  h4 {
+      font-size: 17px;
+  }
+  h5 {
+      font-size: 17px;
+  }
+  h6 {
+      font-size: 36px;
+  }
+  p {
+    font-size: 17px;
+}
+  a {
+      font-size: 17px;
+  }
+  b {
+      font-size: 20px;
+  }
+  span {
+      font-size: 14px;
+  }
+  button {
+      font-size: 18px;
+  }
+  
+  .top-links-icons i {
+      font-size: 24px;
+  }
+}
+

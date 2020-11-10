@@ -1,0 +1,253 @@
+/*-----top-links------*/
+.navigation {
+  max-width: 1124px;
+  width: 100%;
+  height: 100px;
+  position: fixed;
+  margin: 0 auto;
+  align-content: center;
+  top: 0;
+  z-index: 2;
+ 
+}
+.top-links_icons span {
+  display: none;
+  font-size: 16px;
+  font-weight: 300;
+}
+.top-links {  
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 15px 10px;
+  align-items: center;
+  background-color: $colour-background-light;
+}
+.top-links_icons {
+  width: 150px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-right: 10px;
+}
+.top-links_icons a{
+  display: flex;
+  flex-direction: row;
+  align-items: center; 
+}
+.top-links_icons i {
+  color: $colour-blue-dark-md;
+  font-size: 17px;
+&:hover {
+  color: $colour-blue-dark;
+}
+}
+/*-----------------------------------cart-----*/
+#cart-inner {
+  width: 300px;
+  text-align: center;
+  height: auto;
+  display: none;
+  overflow: hidden;
+  position: absolute;
+  background-color: $colour-background-dark;
+  top: 90px;
+  right: 0px;
+  z-index: 2;
+  padding: 20px; 
+}
+.cart-item {
+  background-color: #ffffff;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.cart-item__products button{
+  margin: 0px auto;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.cart-product {
+  padding-top: 10px;
+  text-align: center;
+  
+}
+.cart-product b{
+  font-size: 17px;
+  padding-left: 20px;
+}
+
+.cart--number {
+  width: 20px;
+  height: 20px;
+  padding-top: 2px;
+  background-color: rgb(212, 44, 44);
+  border-radius: 50%;
+  color: white;
+  text-align: center;
+  border: none;
+  font-size: 14px;
+  margin-left: -30px;
+  margin-top: -10px;
+  float: right;
+}
+
+/*-----navbar------*/
+.navbar {
+  max-width: 1124px;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: $colour-background-dark;
+  align-items: center;
+  padding: 0px 10px;
+}
+
+.navbar button {
+  background: $colour-yellow-light-md;
+  color: black;
+  padding: 5px 25px;
+  font-size: 15px;
+  border-radius: 35px;
+  outline: none;
+  border: none;
+  &:hover{
+  background: $colour-yellow-light;
+  color: black;
+  }
+}
+.navbar-mobil {
+  display: none;
+  width: 100%;
+  height: 200px;
+  margin: 0px auto;
+  text-align: center;
+  padding: 0px 0px;
+  background-color: $colour-background-dark;
+  overflow: hidden;
+  position: absolute;
+  margin-left: -10px;
+  top: 130px;
+}
+
+.navbar-mobil a {
+  color: white;
+  display: block;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 20px;
+  font-weight: 400;
+  &:hover{
+    color:  $colour-background-dark;
+    background-color:  $colour-yellow-light-md;
+}  
+}
+.navbar-mobil .active{
+  color:  $colour-background-dark;
+background-color:  $colour-yellow-light-md;
+}
+
+.icon-menu {
+  padding: 5px 10px;
+  color: white;
+  font-size: 16px;
+  position: relative;
+  cursor: pointer;
+  font-weight: 300;
+  &:hover{
+    color: white;
+  }
+}
+
+.navbar i {
+  margin-right: 10px;
+}
+.navbar-desktop {
+  visibility: hidden;
+  float: right;
+  margin-right: 0px;
+  position: absolute;
+  }
+  .navbar-desktop a {
+  color: white;
+  font-size: 18px;
+  padding: 0px 10px;
+  &:hover{
+    color: $colour-yellow-light-md;
+  }
+  }
+  .navbar-desktop .active{
+    color:  $colour-yellow-light-md;
+    background:  none;
+  }
+  
+  /*-----media-----*/
+
+  @media (min-width: $breakpoint-second) {
+    .navbar-mobil{
+      top: 150px;
+    }
+    .top-links_icons i {
+      font-size: 20px;
+    }
+    .icon-menu{
+      font-size: 20px;
+    }
+  }
+  
+  @media (min-width: $breakpoint-fourth) {
+    .navigation span  {
+      display: block;
+      padding: 0px 10px;
+    }
+    .cart--number {
+    margin-left: -60px;
+    margin-top: -20px;
+    padding: 2px 9px 0px 7px;
+      }
+    
+    .top-links_icons  {
+      margin-right: 110px;
+    }
+    .icon-menu{
+      visibility: hidden;
+    }
+    .navbar-mobil{
+      visibility: hidden;
+    }
+    .navbar-desktop{
+      visibility: visible;
+    }
+    .navbar-desktop a{
+      font-size: 18px;
+    }
+
+  }
+ 
+  @media (min-width: $breakpoint-fifth) {
+    .navbar button  {
+      font-size: 20px;
+    }
+    .navbar-desktop a {
+      font-size: 20px;
+    }
+  }
+ 
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+ 
+  
+
+  

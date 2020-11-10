@@ -1,0 +1,118 @@
+html, body{
+  margin: 0 auto;
+  padding: 0 auto;
+}
+html {
+  background-color: $colour-background-dark;
+}
+
+*,
+*:after,
+*:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 1124px;
+ 
+  background-color: $colour-background-light;
+
+}
+
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.logo {
+  display: block;
+  width: 90px;
+  height: 40px;
+}
+
+a,
+button,
+.btn-cart-check-out,
+li {
+    outline: none;
+    text-decoration: none;
+    list-style: none;
+}
+
+.back-to-top i {
+  width: 40px;
+  height: 40px;
+  font-size: 30px;
+}
+
+.back-to-top{
+  cursor: pointer;
+  align-items: center;
+  margin: 10px auto;
+  padding-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  color: $colour-blue-dark-md;
+  &:hover {
+    color: $colour-blue-dark;
+  }
+}
+.back-to-top span{
+  font-size: 16px;
+}
+
+/*-------------page-next-----*/
+
+.page-next {
+  margin-top: 30px;
+  max-width: 1124px;
+  width: 100%;
+ padding: 10px;
+  margin-bottom: 30px;
+  position: fixed;
+  background-color: $colour-background-light;
+  -webkit-box-shadow: 0 6px 4px -4px black;
+  -moz-box-shadow: 0 6px 4px -4px black;
+  box-shadow: 0 6px 4px -4px black;
+  z-index: 1;
+}
+
+.page-next a {
+  padding: 5px 15px;
+  background: none;
+  color: $colour-text;
+  font-weight: 400;
+  &:hover {
+    color: blue;
+}
+}
+
+.page-next .active {
+  color: blue;
+}
+/*-------------error-------------*/
+
+.error {
+  border: 1px solid red;
+  color: red;
+  background: rgb(207, 207, 207);
+  padding: 1em;
+&:after {
+  content: "An error occurred.";
+}
+}
+
+@media (min-width: $breakpoint-second) {
+  .page-next {
+    margin-top: 50px;
+  }
+  .logo {
+    width: 120px;
+    height: 60px;
+}
+}
+

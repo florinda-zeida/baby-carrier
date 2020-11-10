@@ -1,0 +1,274 @@
+.hero-slide {
+  max-width: 1124px;
+  margin: 0px auto;
+  margin-top: 130px;
+  position: relative;
+}
+
+.slide-img-desk {
+  display: none;
+}
+
+
+.slides-style :nth-child(4) {
+  visibility: hidden;
+}
+
+.slides-style {
+  display: none;
+}
+/*-------first-slide------------------*/
+
+.text-slide-first {
+  color: #f2f2f2;
+  position: absolute;
+  top: 20%;
+  left: 37%;
+}
+
+.text-slide-first span {
+  font-family: Caveat, "sams-serif";
+  font-size: 30px;
+  color: white; 
+}
+
+.text-slide-first h1 {
+  margin-top: -3px;
+}
+
+.text-slide-first p {
+  color: #ffffff;
+  margin-bottom: -20px;
+}
+/*-------second-slide-----*/
+
+.text-slide-second {
+  position: absolute;
+  top: 20%;
+  left: 10%;
+}
+
+.text-slide-second span {
+  color: rgb(102, 102, 204);
+  font-size: 18px;
+  font-weight: 500;
+  
+}
+
+.text-slide-second h1 {
+  margin-top: -5px;
+}
+
+.text-slide-second p {
+  padding-left: 2px;
+  width: 70%;
+  margin-bottom: -10px;
+}
+
+.text-slide-second i {
+  font-size: 12px;
+  position: absolute;
+  color: rgb(102, 102, 204);
+  margin-left: -5px;
+  margin-top: -7px;
+  -ms-transform: rotate(20deg);
+  transform: rotate(20deg);
+}
+
+.text-slide-second button {
+  margin-top: 10px;
+}
+
+
+/*-------third-slide-----*/
+
+.text-slide-third {
+  position: absolute;
+  top: 10%;
+  left: 35%;
+}
+
+.text-slide-third span {
+  color: white;
+  font-size: 17px;
+  font-weight: 500;
+  font-family: poppins, "sans-serif";
+}
+
+.text-slide-third h1 {
+  margin-top: -6px;
+}
+
+.text-slide-third p {
+  color: #ffffff;
+  width: 80%;
+  margin-bottom: -20px;
+}
+
+.text-slide-third button {
+  margin-top: 15px;
+}
+
+
+/*---next-prev-icons-------*/
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 10px;
+  margin-top: -22px;
+  color: #353742;
+  font-size: 18px;
+  transition: 0.6s ease;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+}
+
+.prev:hover,
+.next:hover {
+  color: rgb(102, 102, 204);
+}
+
+
+/*---dots--------------*/
+
+.dots-icon {
+  text-align: center;
+  margin-top: -28px;
+}
+
+.dot {
+  cursor: pointer;
+  position: relative;
+  height: 7px;
+  width: 7px;
+  margin: 0px auto;
+  background-color: rgb(102, 102, 204);
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dots-icon:hover {
+  background-color: $colour-background-dark-md;
+}
+
+/*----media------*/
+@media (min-width: $breakpoint-first) {
+  
+  h1{
+    margin-bottom: 10px;
+  }
+  .text-slide-first p {
+    margin-bottom: 0;
+  }
+  .text-slide-second p {
+    margin-bottom: 0px;
+  }
+  .text-slide-third p {
+    margin-bottom: 0px;
+  }
+}
+@media (min-width: $breakpoint-second) {
+  .slides-style :nth-child(4)  {
+    width: 70%;
+    visibility: visible;
+    margin-bottom: 20px;
+  }
+  .hero-slide {
+    margin-top: 150px;
+  }
+  .hero-slide  p {
+    font-size: 18px;
+  }
+  .text-slide-first {
+    top: 15%;
+  }
+.text-slide-first span {
+  font-size: 40px;
+}
+.text-slide-second  {
+  top: 25%; 
+}
+
+.text-slide-second span {
+  font-size: 22px; 
+}
+.text-slide-third  span {
+  font-size: 22px; 
+}
+}
+
+@media (min-width: $breakpoint-third) {
+  .slide-img-mobil{
+    display: none;
+  }
+  .slide-img-desk {
+    display: block;
+  }
+  .text-slide-first {
+    top: 7%;
+  }
+  .text-slide-first span {
+    font-size: 46px;
+  }
+  .text-slide-second p {
+    width: 100%;
+  }
+}
+
+
+@media (min-width: $breakpoint-fourth) {
+  .hero-slide  p {
+    font-size: 22px;
+  }
+  .text-slide-first {
+    top: 10%;
+  }
+  .text-slide-third  {
+    top: 15%;
+  }
+  .prev,
+.next {
+  font-size: 24px; 
+}
+  .dot {
+    height: 15px;
+    width: 15px;
+  }
+}
+
+@media (min-width: $breakpoint-fifth) {
+  .text-slide-first {
+    top: 20%;
+  }
+  .text-slide-first span {
+    font-size: 56px;
+  }
+  .text-slide-first button{
+    margin-top: 20px;
+  }
+  .text-slide-second  {
+    top: 30%; 
+  }
+  .text-slide-third  {
+    top: 25%; 
+  }
+  
+  .text-slide-second span {
+    font-size: 30px; 
+  }
+  
+  .text-slide-third  span {
+    font-size: 30px; 
+  }
+  
+}
+

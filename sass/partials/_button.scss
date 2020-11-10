@@ -1,0 +1,20 @@
+button{
+    font-size: 15px;
+    color: white;
+    background-color: $colour-blue-dark-md;
+    padding: 6px 20px;
+    border: none;
+    outline: none;
+    margin: 0;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: $colour-blue-dark;
+    color: white;
+}
+@media (min-width: $breakpoint-fourth) {
+  button{
+    font-size: 17px;
+  }
+}

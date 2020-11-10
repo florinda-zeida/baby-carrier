@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Snug online store for baby carriers!-Product-Detail">
+    <meta name="keywords" content="baby carriers, snug carriers, shop carriers, kids">
+    <meta name="author" content="Florinda Zeida">
+    <title> Snug | Snug Baby Carriers - Product-detail </title>
+    <!--CSS============================================= --> 
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;0,800;1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    <!--CSS============================================= -->
+    <!--ICON SOSIAL MEDIA============================================= -->
+    <script src="https://kit.fontawesome.com/aa9fac59e8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="wrapper">
+    <!--HEADER============================================= -->
+    <header class="navigation">
+        <div class="top-links">
+            <div>
+                <a href="/html/index.html"><img class="logo" src="/images/snug-logo.png" alt="Image logo with name of the site Slug"></a>
+            </div>
+            <div class="top-links_icons">
+                <a href="#"><i class="fas fa-user-alt"></i><span>MyAccount</span></a>
+                <a href="#"><i class="fas fa-heart "></i><span>Favorit</span></a>
+                <a class="cart" onclick="cartFunction()"><i class="fas fa-shopping-cart"></i><span>Cart</span></a>
+                <div class="cart--number">0</div>
+                <div id="cart-inner">
+                    <div class="cart-item">
+                        <h3><b>CART</b></h3>
+                        <div class="cart-item__products">
+                            <div class="cart-product"></div>
+                            <a href="/html/checkout.html"><button>Go to Checkout</button></a>   
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar">
+            <a class="icon-menu" onclick="menuFunction()">
+                <i class="fa fa-bars"></i>MENU
+            </a>
+            <div class="navbar-mobil">
+                <a href="/html/index.html">HOME</a>
+                <a href="/html/shop.html">SHOP</a>
+                <a href="/html/contact.html">CONTACT</a>
+            </div>
+			<div class="navbar-desktop">
+                <a href="/html/index.html">HOME</a>
+                <a href="/html/shop.html">SHOP</a>
+                <a href="/html/contact.html">CONTACT</a>
+            </div>
+            <div>
+                <button href="">BLOG</button>
+            </div>
+        </nav>
+    </header>
+    <div class="page-next">
+      <a href="/html/index.html">&#8592; Home</a>
+      <a class="active" href="/html/product_detail.html">Product-Detail</a>
+  </div>
+   <!--MAIN============================================= -->
+  <main class="product-detail">
+    <div class="product-detail_desktop">
+        <!--IMPORTANT-DESKTOP-->
+        <section class="product-detail_item">
+            <div class="product-detail_gallery">
+                <div class="product-detail_gallery--main">
+                    <img src="/images/product-3.png" class="main-image" alt="Mom who shows how to put a baby carries">
+                </div>
+                <div class="product-detail_gallery--slide">
+                    <div class="slide-img"><img src="/images/product-3.png" alt="Mom who shows how to put a baby carries" data-image="/images/product-3.png">
+                    </div>
+                    <div class="slide-img"><img src="/images/product-2.png" alt="Baby carrier black" data-image="/images/product-2.png">
+                    </div>
+                    <div class="slide-img"><img src="/images/product-4.png" alt="Baby carrier black" data-image="/images/product-4.png">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="product-detail_item">
+            <div class="product-detail_info">
+                <div class="product-detail_info--text">
+                    <h3>Snug Embrace</h3>
+                        <a class="add-to-wish"><i class="far fa-heart"></i><span>Add to wish</span></a>
+                </div>
+                <div class="product-detail_info--price">
+                    <h3><b>$149.99</b><span>  VAT included</span></h3>
+                    <div class="product-detail_info--star">
+                        <i class="fa fa-star "></i>
+                        <i class="fa fa-star "></i>
+                        <i class="fa fa-star "></i>
+                        <i class="fa fa-star "></i>
+                        <i class="fa fa-star "></i>
+                        <span class="review">(7 review)</span>
+                    </div>
+                </div>
+                <div class="product-detail_info--color">
+                    <h5>Choose color:</h5>
+                    <div class="color">
+                        <i class="fas fa-circle"></i>
+                        <i class="fas fa-circle"></i>
+                        <i class="fas fa-circle"></i>
+                        <i class="fas fa-circle"></i>
+                    </div>
+                </div>
+                <div class="product-detail_info--size">
+                    <h5>Choose size:</h5>
+                    <div class="choose-size">
+                        <select name="size" id="size">
+                          <option selected >small</option>
+                          <option value="1">medium</option>
+                          <option value="2">big</option>
+                        </select>
+                    </div>
+                </div>
+                <button class="btn-cart">Add to Cart</button>
+            </div>     
+        </div>
+    </div>
+    <section class="product-detail_item">
+        <div class="product-detail_tabs">
+            <input class="radio" id="one" name="group" type="radio" checked>
+            <input class="radio" id="two" name="group" type="radio">
+            <input class="radio" id="three" name="group" type="radio">
+            <div id="tabs-btn">
+                <label class="tab" id="one-tab" for="one">Description</label>
+                <label class="tab" id="two-tab" for="two">Specification</label>
+                <label class="tab" id="three-tab" for="three">Features</label>
+            </div>
+            <div class="product-detail_tabs--text">
+                <div class="tabs--text" id="one-text">
+                    <h3><b>Description</b></h3>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
+                </div>
+                <div class="tabs--text" id="two-text">
+                    <h3><b>Specification</b></h3>
+                    <p> Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt
+                        tempus.
+                    </p>
+                </div>
+                <div class="tabs--text" id="three-text">
+                    <h3><b>Features</b></h3>
+                    <p> Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.</p>
+                    <p>Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt
+                        tempus.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="product-detail_item">
+        <div class="product-detail_reviews">
+            <h3>Reviews</h3>
+            <div class="review-info-desktop">
+                <div class="review-star">
+                    <h2>4.8</h2>
+                    <h3><b>7 Reviews</b></h3>
+                    <div class="star">
+                        <i class="fa fa-star "></i>
+                        <i class="fa fa-star "></i>
+                        <i class="fa fa-star "></i>
+                        <i class="fa fa-star "></i>
+                        <i class="fa fa-star "></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="review-info-desktop">
+                <div class="review-feedback">
+                    <div class="review-feedback--stars">
+                    <h3><b>Lara</b></h3>
+                    <div class="star">
+                        <i class="fa fa-star "></i>
+                        <i class="fa fa-star "></i>
+                        <i class="fa fa-star "></i>
+                        <i class="fa fa-star "></i>
+                        <i class="fa fa-star "></i>
+                    </div>
+                    </div>
+                    <q>Pellentesque habitant morbi tristique senectus et netus et malesuada fames turpis egestas.</q>
+                    <div class="review-customer">
+                        <h5>Reviewed: 20.03.2019</h5>
+                        <button href="">View more reviews</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--SIMILAR PRODUCT============================================= -->
+    <section class="shop--inner shop__background">
+      <h2>Similar Product</h2>
+      <div class="shop--inner_product">
+        <a href="/html/product_detail.html" class="card_item">
+            <img src="/images/product-1.png" alt="Baby carrier red" />
+            <h4 class="h4"><b class="b">NEW / +2 COLOUR</b></h4>
+            <h4 class="h4">Snug Embrance</h4>
+            <h4 class="h4"><b class="b">1,340 NOK</b></h4>
+        </a>
+        <a href="/html/product_detail.html" class="card_item">
+            <img src="/images/product-2.png" alt=" Baby carrier black " />
+            <h4 class="h4"><b class="b">NEW / +2 COLOUR</b></h4>
+            <h4 class="h4">Snug Embrance</h4>
+            <h4 class="h4"><b class="b">1,340 NOK</b></h4>
+        </a>
+        <a href="/html/product_detail.html" class="card_item">
+            <img src="/images/product-3.png" alt=" Mother who holds the baby in baby carrier " />
+            <h4 class="h4"><b class="b">NEW / +2 COLOUR</b></h4>
+            <h4 class="h4">Snug Embrance</h4>
+            <h4 class="h4"><b class="b">1,340 NOK</b></h4>
+        </a>
+      </div>
+  </section>
+</main>
+   <!--footer====================================== -->
+   <footer class="footer">
+    <div class="footer_item_top">
+            <a href=""><i class="fas fa-truck"></i><span> Free Delivery</span></a>
+            <a href=""><i class="fas fa-calendar-alt"></i><span> 60 Days Return</span></a>
+            <a href=""><i class="fas fa-undo"></i><span> Free Returns</span></a>
+    </div>
+    <div class="footer_inner">
+        <div class="footer_item">
+            <h3 class="h3">BUSINESS TIME</h3>
+            <h5 class="h5">Monday - Friday : 08: 00am to 05:00pm</h5>
+            <h5 class="h5">Saturday: 10: 00am to 08:00pm</h5>
+            <h5 class="h5">Sunday : Closed</h5>
+        </div>
+        <div class="footer_item">
+            <h3 class="h3">NEWSLETTER</h3>
+            <form class="newsletter">
+                <input type="email" id="email" name="email" placeholder="  mail@exemple.com">
+                <input class="btn-footer" type="submit" value="SUBMIT" />
+            </form>
+        </div>
+        <div class="footer_item">
+            <h3 class="h3">SOCIAL MEDIA</h3>
+            <div class="footer-icons-social">
+                <a class="a" href=""><i class="fa fa-facebook"></i></a>
+                <a class="a" href=""><i class="fa fa-twitter"></i></a>
+                <a class="a" href=""><i class="fa fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="footer_item border">
+            <h3 class="h3">HELP</h3>
+            <ul>
+                <li><a class="a" href="">Frequently Asked Questions</a></li>
+                <li><a class="a" href="">How to return an order</a></li>
+                <li><a class="a" href="">How to track an order</a></li>
+                <li><a class="a" href="">About our return policy</a></li>
+                <li><a class="a" href="">How to reset your password</a></li>
+            </ul>
+        </div>
+        <div class="footer_item border">
+            <h3 class="h3">INFORMATION</h3>
+            <ul>
+                <li><a class="a" href="">About US</a></li>
+                <li><a class="a" href="">Customer Service</a></li>
+                <li><a class="a" href="">Terms</a></li>
+                <li><a class="a" href="">Privacy Policy</a></li>
+                <li><a class="a" href="">Payment Method</a></li>
+            </ul>
+        </div>
+        <div class="footer_item border">
+            <h3 class="h3">CONTACT US</h3>
+            <h5 class="h5">Adress: Otto Rugesvei 90 1369 Norway</h5>
+            <h5 class="h5">Phone: +47 45 67 876</h5>
+            <h5 class="h5">Email: post@letha.com</h5>
+        </div>
+    </div>
+</footer>
+<!-- End Footer  -->
+
+<!-- Start copyright  -->
+<div id="copyright">
+    <p>All Rights Reserved  &copy; 2020  Design and development by Florinda Zeida</p>
+</div>
+<!-- Back-to top -->
+<a href="#" title="Back to top" class="back-to-top">
+<i class="fas fa-arrow-alt-circle-up"></i>
+<span>Back to top</span>
+</a>
+
+  </div>
+  <!-- JS FILES -->
+    <script src="/javascript/Navbar.js"></script>
+    <script src="/javascript/Product.js"></script>
+    <script src="/javascript/Cart_item.js"></script>
+    
+    </body>
+    </html>

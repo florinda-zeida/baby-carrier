@@ -1,0 +1,140 @@
+
+.footer {
+  max-width: 1124px;
+  margin: 0px auto;
+  padding: 0px auto;
+  margin-top: -40px;
+}
+
+.footer_item_top {
+  max-width: 1124px;
+  display: flex;
+  flex-direction: row;
+  margin: 0px auto;
+  padding: 5px;
+  background-color: $colour-background-dark;
+}
+
+.footer_item_top span {
+  display: none;
+}
+
+.footer_item_top a {
+  margin: 0px auto;
+  color: $colour-yellow-light-md;
+  &:hover{
+  color: $colour-yellow-light;
+  }
+}
+
+.footer_item_top i {
+  font-size: 18px; 
+  margin: 20px 30px;
+  
+}
+
+
+/*-------footer-content------*/
+
+.footer_inner {
+  margin: 0px auto;
+  padding-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: $colour-background-dark-md;
+  justify-content: center;
+}
+
+.footer_item {
+  width: 300px;
+  margin: 20px 20px;
+  text-align: left;
+  padding-bottom: 20px;
+  border-bottom: 0.1px solid $colour-yellow-light-md;
+}
+
+.footer_item i {
+  font-size: 30px;
+  color: $colour-yellow-light-md;
+  margin: 0px 20px 20px 20px;
+&:hover {
+  color: $colour-yellow-light;
+}
+}
+
+.footer_item .h3 {
+  color: $colour-footer;
+  text-decoration-line: underline;
+  padding-bottom: 20px;
+
+}
+
+.footer_item .h5 {
+  margin-top: 8px;
+  color: $colour-footer;
+}
+
+.footer_item ul {
+  margin: -15px 0px 10px 0px;
+  padding: 0px 0px;
+}
+
+.footer_item .a {
+  color: $colour-yellow-light-md;
+  line-height: 1.80em;
+&:hover {
+  color: $colour-yellow-light;
+  text-decoration: underline;
+}
+}
+
+.footer_item input {
+  width: 270px;
+  height: 40px;
+}
+
+.btn-footer {
+  background: $colour-yellow-light-md;
+  color: black;
+  font-size: 16px;
+  margin: 20px 0px;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+&:hover {
+  background: $colour-yellow-light;
+}
+}
+/*-------copyright------*/
+
+#copyright p {
+  font-size: 14px;
+  margin: 0px;
+  text-align: center;
+  padding: 20px;
+}
+
+@media only screen and ( min-width: $breakpoint-fourth) {
+  .footer_item_top a{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .footer_item_top span {
+    font-size: 16px;
+    display: block;
+    margin-left: -15px;
+    color: $colour-yellow-light-md;
+  &:hover{
+  color: $colour-yellow-light;
+  }
+  }
+  .border {
+    border-bottom: none;
+  }
+}
+
+

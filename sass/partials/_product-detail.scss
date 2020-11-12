@@ -337,14 +337,14 @@
 
 /*---similar-product---*/
 .shop__background{
-  background: url(/images/background-purple.jpg);
-  background-position: center center;
+  text-align: center;
+  padding-bottom: 20px;
+  @include background('..//images/background-purple.jpg');
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
- text-align: center;
-  padding-bottom: 20px;
+  
  
 }
 @media only screen and (min-width: $breakpoint-second) {

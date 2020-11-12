@@ -3,13 +3,13 @@
 .checkout {
   margin-top: 100px; 
   padding-top: 100px;
-  background: url(/images/background-purple.jpg);
-  background-position: left;
+  @include background('..//images/background-purple.jpg');
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
+
 .checkout-inner{
   margin: 10px;
   padding-bottom: 50px;

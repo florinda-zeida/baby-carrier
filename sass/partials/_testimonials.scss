@@ -6,7 +6,11 @@
   height: 280px;
   margin: 0px auto;
   padding: 0px auto;
-  background-image: url(/images/background-purple.jpg);
+  @include background('..//images/background-purple.jpg');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   
 }
 .index-third  img {

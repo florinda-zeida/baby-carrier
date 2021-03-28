@@ -1,0 +1,10 @@
+=>  Author Website   : Florinda Zeida
+
+=>  This website is a fictitious online store that sells baby carriers and is addressed especially to mothers.
+
+All content and photos are from Unsplash Photos.
+Design & Development by Florinda Zeida.
+
+=>  About: This is an assignment for Interaction Design.
+The request was to make an e-commerce website for a company called Snug selling baby carriers. Their primary target audience is new mothers looking for a way to have their hands free while still following an active life.
+The website should be mobile responsive.
